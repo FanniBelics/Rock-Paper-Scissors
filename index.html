@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rock-Paper-Scissors</h1>
+    </header>
+    <div style="display: inline-block;">
+        <p class="scoreboard won" >Won: <span id="won"></span></p>
+        <p class="scoreboard draw">Draw: <span id="draw"></span></p>
+        <p class="scoreboard lost">Lost: <span id="lost"></span></p>
+        <button class="scoreboard" id = "againButton" onclick="playAgain()">Again!</button>
+    </div>
+    <div class="buttons" style="display: inline-block;">
+        <div class="compButtons">
+            <button id="comp_rock"><img src="src/rock.png"></button>
+            <button id="comp_paper"><img src="src/paper.png"></button>
+            <button id="comp_scissors"><img src="src/scissors.png"></button>
+        </div>
+        <p id="outcome"></p>
+        <div class="playerButtons">
+            <button id="player_rock"onclick="playerPick('rock')"><img src="src/rock.png"></button>
+            <button id="player_paper" onclick="playerPick('paper')"><img src="src/paper.png"></button>
+            <button id="player_scissors" onclick="playerPick('scissors')"><img src="src/scissors.png"></button>
+        </div>
+
+    </div>
+</body>
+</html>

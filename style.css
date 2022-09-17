@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Comic+Neue&family=Kalam:wght@300;400&display=swap');
+
+:root
+{
+    --pastel_blue: #73caf0;
+    --pastel_red: #ffa9a9;
+    --pastel_green: #94fa92;
+    --pastel_yellow: #fdfd96;
+    --writing_yellow: #bc9c20;
+}
+
+body
+{
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(180deg,
+    #fcfafa 95%, var(--pastel_blue) 10%);
+    background-size: 56.57px 56.57px;
+    font-family: 'Kalam', cursive;
+}
+
+header 
+{
+    text-align: center;
+}
+header h1
+{
+    font-size: 70px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.scoreboard
+{
+    padding: 20px 10px;
+    margin: 10px 5px;
+    margin-right: 70px;
+    font-size: 20px;
+    width: 250px;
+    font-weight: bold;
+}
+
+.scoreboard.won
+{
+    background-color: var(--pastel_green);
+    color: green;
+}
+
+.scoreboard.draw
+{
+    background-color: var(--pastel_yellow);
+    color: var(--writing_yellow);
+}
+
+.scoreboard.lost
+{
+    background-color: var(--pastel_red);
+    color: red;
+}
+
+#againButton
+{
+    width: 270px;
+    border:blue 2px solid;
+    background-color: var(--pastel_blue);
+    color: blue;
+    font-family: 'Kalam', cursive;
+}  
+
+#againButton:hover
+{
+    background-color: #64b6d9;
+}
+
+#againButton:active
+{
+    background-color: #58aace;
+}
+
+.buttons
+{
+    width: fit-content;
+    margin: auto;
+    vertical-align: top;
+}
+
+.buttons button
+{
+    width: fit-content;
+    border-radius: 100%;
+    border: var(--pastel_blue) solid 4px;
+    margin: 20px;
+    padding: 0;
+}
+
+.buttons button img
+{
+    border-radius: 100%;
+    width: 200px;
+}
+
+.compButtons button:hover
+{
+    cursor: default;
+}
+
+.playerButtons button:hover
+{
+    border: var(--pastel_red) 4px dotted;
+}
+
+.playerButtons button:active
+{
+    filter:sepia(40%)
+}
+
+#outcome
+{
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
