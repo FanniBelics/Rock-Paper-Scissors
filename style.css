@@ -121,7 +121,7 @@ header h1
 
 .playerButtons button:active
 {
-    filter:sepia(40%)
+    filter:sepia(45%)
 }
 
 #outcome
